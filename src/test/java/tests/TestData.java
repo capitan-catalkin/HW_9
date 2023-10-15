@@ -10,12 +10,12 @@ public class TestData {
                         gender = date.randomGender(),
                         number = date.randomNumber(),
                         day = date.randomDay(),
-                        mohth = date.randomMohth(),
+                        month = date.randomMonth(),
                         year = date.randomYear(),
                         subject = date.randomSubject(),
                         hobbie = date.randomHobbie(),
                         picture =  date.randomPicture(),
-                        addrees =  date.randomAddrees(),
+                        address =  date.randomAddress(),
                         state = date.randomState(),
                         city = date.randomCityByState(state);
 }

@@ -34,8 +34,8 @@ public class RandomData {
         return day < 10 ? "0" + day : String.valueOf(day);
     }
 
-    public String randomMohth() {
-        return randomMohths();
+    public String randomMonth() {
+        return randomMonths();
     }
 
     public String randomYear() {
@@ -54,7 +54,7 @@ public class RandomData {
         return randomPictures();
     }
 
-    public String randomAddrees() {
+    public String randomAddress() {
         return faker.address().streetAddress();
     }
 
@@ -72,7 +72,7 @@ public class RandomData {
         return faker.options().option(gender);
     }
 
-    public static String randomMohths() {
+    public static String randomMonths() {
         String[] month = {"January", "February", "March", "April", "May",
                 "June", "July", "August", "September", "October", "November", "December"};
         return faker.options().option(month);
