@@ -1,9 +1,9 @@
 package tests;
 
-import utils.RandomDate;
+import utils.RandomData;
 
-public class TestDate {
-    RandomDate date = new RandomDate();
+public class TestData {
+    RandomData date = new RandomData();
     public final String name = date.randomName(),
                         lastName = date.randomLastName(),
                         email = date.randomEmail(),

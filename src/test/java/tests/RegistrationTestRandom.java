@@ -2,13 +2,13 @@ package tests;
 
 import org.junit.jupiter.api.Test;
 import page.RegistrationPage;
-import utils.RandomDate;
 
 public class RegistrationTestRandom extends TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
-    TestDate td = new TestDate();
+    TestData td = new TestData();
+
     @Test
-    void fillFormTest(){
+    void fillFormTest() {
 
         registrationPage.openPage()
                 .closeBanner()
@@ -27,16 +27,16 @@ public class RegistrationTestRandom extends TestBase {
                 .setSubmit();
 
 
-        registrationPage.checkResult("Student Name",td.name + " " + td.lastName)
+        registrationPage.checkResult("Student Name", td.name + " " + td.lastName)
                 .checkResult("Student Email", td.email)
                 .checkResult("Gender", td.gender)
                 .checkResult("Mobile", td.number)
-                .checkResult("Date of Birth",td.day + " " + td.mohth+ "," + td.year)
+                .checkResult("Date of Birth", td.day + " " + td.mohth + "," + td.year)
                 .checkResult("Subjects", td.subject)
                 .checkResult("Hobbies", td.hobbie)
                 .checkResult("Picture", td.picture)
                 .checkResult("Address", td.addrees)
-                .checkResult("State and City",td.state + " " + td.city);
+                .checkResult("State and City", td.state + " " + td.city);
     }
 
 
